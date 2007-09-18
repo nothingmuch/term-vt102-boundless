@@ -6,7 +6,7 @@ use base qw/Term::VT102/;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub new {
 	my $self = shift->SUPER::new( @_, rows => 1, cols => 1 );
