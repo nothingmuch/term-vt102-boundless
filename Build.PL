@@ -8,7 +8,7 @@ Module::Build->new(
 	module_name => 'Term::VT102::Boundless',
 	license => 'perl',
 	requires => {
-		'perl'				=> '5.8',
+		'perl'				=> '5.008',
 	},
 	build_requires => {
 		'Test::More' => "0.53",
