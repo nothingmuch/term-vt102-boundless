@@ -87,7 +87,7 @@ sub _extend_row {
 
 	if ( (my $extend = $self->{cols} - length($self->{scrt}[$row]))  > 0 ) {
 		$self->{scra}[$row] .= Term::VT102::DEFAULT_ATTR_PACKED x $extend; # FIXME use the last attr in the row instead?
-		$self->{scrt}[$row] .= (" " x $extend);
+		$self->{scrt}[$row] .= ("\x00" x $extend);
 	}
 }
 
